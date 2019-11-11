@@ -11,7 +11,7 @@ class User(models.Model):
         return str(self.name)
 
 
-class Twitter(models.Model):
+class Tweet(models.Model):
     tweet = models.TextField(help_text="enter you tweet")
     date = models.DateTimeField(auto_now_add=True)
     user = models.ForeignKey(User, on_delete=models.CASCADE)

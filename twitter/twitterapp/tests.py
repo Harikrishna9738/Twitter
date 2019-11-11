@@ -13,11 +13,11 @@ class UserTestCase(TestCase):
         self.assertEqual(user.password, 'hari123')
 
 
-class TwitterTestCase(TestCase):
+class TweetTestCase(TestCase):
     def setUp(self):
         usert =  User.objects.create(name = 'harikrishna', email = 'harikrishnayadav70@gmail.com',password = 'hari123')
-        Twitter.objects.create(tweet = 'just',date = 'Nov. 9, 2019, 5:22 a.m.',user = usert )
+        Tweet.objects.create(tweet = 'just',date = 'Nov. 9, 2019, 5:22 a.m.',user = usert )
 
     def test_twitter_name(self):
-        room = Twitter.objects.get(tweet = 'just')
+        room = Tweet.objects.get(tweet = 'just')
         self.assertEqual(room.tweet,'just')
