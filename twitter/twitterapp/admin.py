@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import User, Twitter
+from .models import User, Tweet
 
 
 class UserAdmin(admin.ModelAdmin):
@@ -9,8 +9,8 @@ class UserAdmin(admin.ModelAdmin):
 admin.site.register(User,UserAdmin)
 
 
-class TwitterAdmin(admin.ModelAdmin):
+class TweetAdmin(admin.ModelAdmin):
     list_display = ('tweet','date','user')
 
 
-admin.site.register(Twitter,TwitterAdmin)
+admin.site.register(Tweet,TweetAdmin)
