@@ -2,7 +2,7 @@
 A simple twitter application which works same as twitter,user can post and delete the tweets and he can
 his recent tweets
 
-# Prerequisites
+## Prerequisites
 
 You need to install the following packages for backend:
 ```
@@ -15,7 +15,7 @@ psycopg2==2.8.4
 pytz==2019.3
 sqlparse==0.3.0
 ```
-Installing
+## Installation
 
 Clone the repository
 ```
