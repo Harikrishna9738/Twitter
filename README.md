@@ -19,7 +19,7 @@ sqlparse==0.3.0
 
 Clone the repository
 ```
-https://github.com/Harikrishna9738/CabAllocationSystem
+https://github.com/Harikrishna9738/Twitter
 ```
 Setting up your virtual environment:
 ```
@@ -52,13 +52,13 @@ psql
 ```
 First, we will create a database for our Django project. Each project should have its own isolated database for security reasons. We will call our database myproject in this guide, but it’s always better to select something more descriptive:
 ```
-CREATE DATABASE cabsystem;
+CREATE DATABASE twitter;
 ```
 Remember to end all commands at an SQL prompt with a semicolon.
 
 Next, we will create a database user which we will use to connect to and interact with the database. Set the password to something strong and secure:
 ```
-CREATE USER cabsystemuser WITH PASSWORD 'cabsystem';
+CREATE USER cabsystemuser WITH PASSWORD 'twitter';
 ```
 Afterwards, we’ll modify a few of the connection parameters for the user we just created. This will speed up database operations so that the correct values do not have to be queried and set each time a connection is established.
 
@@ -70,7 +70,7 @@ ALTER ROLE cabsystemuser SET timezone TO 'UTC';
 ```
 Now, all we need to do is give our database user access rights to the database we created:
 ```
-GRANT ALL PRIVILEGES ON DATABASE cabsystem TO cabsystemuser;
+GRANT ALL PRIVILEGES ON DATABASE cabsystem TO twitteruser;
 ```
 Exit the SQL prompt to get back to the postgres user’s shell session:
 ```
