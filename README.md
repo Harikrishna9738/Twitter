@@ -29,6 +29,19 @@ Activate the Virtual Environment:
 ```
 source .env/bin/activate
 ```
+To run the migrations
+```
+python3 manage.py makemigartions
+```
+To migrate the project
+```
+python3 manage.py migrate
+```
+To run the project
+```
+python3 manage.py runserver
+```
+
 Set Up a Database on local system: During the Postgres installation, an operating system user named postgres was created to correspond to the postgres PostgreSQL administrative user. We need to change to this user to perform administrative tasks:
 ```
 sudo su - postgres
